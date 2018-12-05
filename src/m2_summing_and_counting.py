@@ -290,8 +290,8 @@ def count_sines_vs_cosines(m):
     #   of the RANGE expression, if you happen to know them.
     # -------------------------------------------------------------------------
     total = 0
-    for k in range(-m, m):
-        if math.sin(k) > math.cos(k):
+    for k in range(m*2):
+        if math.sin(-m + k) > math.cos(k-m):
             total = total + 1
 
     return total
